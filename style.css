@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: "Heebo", sans-serif;
+    --primary-color:#FF6464;
+    --text-primary-color:#21243D;
+    --secondary-backgroundColor:#EDF7FA;
+    --text-secondary-color:#000;
+}
+li {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: var(--text-secondary-color);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 29.38px;
+}
+nav {
+    margin-bottom: 114px;
+}
+.links ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-right: 30px;
+}
+.links ul li{
+    margin-top: 27px;
+}
+.links ul li a{
+    padding-right: 20px;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+header{
+    margin-top: 100px;
+}
+header .container {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+header .header-img img {
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.header-content {
+    width: 55%;
+}
+.header-img {
+    width: 25%;
+}
+.header-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65px;
+    margin: 10px 0px;
+}
+.recent-content{
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 25px;
+    width: 50%;
+}
+header {
+    margin: 15px 0px;
+}
+.recent-content p{
+    margin: 10px 0px;
+}
+.recent-content h3 {
+    margin: 15px 0px;
+}
+.recent-parent {
+    display: flex;
+    gap: 20px;
+}
+.header-content p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.5px;
+    color: var(--text-primary-color);
+    margin: 15px 0px;
+}
+.header-content button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    margin: 10px 0px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.recent-content h3 {
+    font-size: 26px;
+    line-height: 38.19px;
+    font-weight: 700;
+}
+.recent-content .margin-right {
+    margin-right: 15px;
+}
+.recent-content .margin-left{
+    margin-left: 15px;
+}
+.recent-posts a {
+    color: #00A8CC;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.5px;
+}
+.recent-content p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.5px;
+    color: var(--text-primary-color);
+}
+section .recent-posts{
+    display: flex;
+    justify-content: space-between;
+}
+main section {
+    background-color: #EDF7FA;
+    padding: 25px 0px;
+}
+.items {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.item-img {
+    width: 20%;
+    
+}
+.item-content {
+    width: 80%;
+}
+.item-img img {
+    width: 100%;
+    border-radius: 7px;
+}
+.border-styling{
+    padding: 1px 20px;
+    border-radius: 20px;
+    background-color: #142850;
+    color: #fff;
+    margin: 20px 0px;
+    font-size: 18px;
+    font-weight: 900;
+}
+.item-content h3 {
+    margin: 10px 0px;
+}
+.item-content p{
+    margin: 10px 0px;
+}
+.items {
+    margin: 15px 0px;
+    border-bottom:1px solid #E0E0E0 ;
+}
+.social-media  {
+    font-size: 30px;
+    text-align: center;
+}
+footer {
+    background-color: #000; 
+    padding: 20px 0; 
+    text-align: center; 
+}
+
+
+@media screen and (max-width: 800px) {
+    .links ul  {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        gap: 0;
+        padding-right: 0px;
+    }
+    nav{
+        margin: 20px 0px;
+    }
+    header {
+        margin: 20px 0px;
+    }
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    header .header-content h1{
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 700;
+
+    }
+    header .header-content p {
+        font-size: 16px;
+        line-height: 23.5px;
+    }
+    header .header-content {
+        width: 100%;
+        order: 2;
+    }
+    header .header-img {
+        width: 100%;
+        order: 1;
+    }
+    .recent-posts {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .recent-parent {
+        display: flex;
+        flex-direction: column;
+    }
+    .recent-content {
+        width: 100%;
+    }
+    .featured-work {
+        text-align: center;
+    }
+    .items{
+        display: flex;
+        flex-direction: column;
+    }
+    .item-img {
+        width: 100%;
+    }
+    .item-content {
+        width: 100%;
+    }
+}
